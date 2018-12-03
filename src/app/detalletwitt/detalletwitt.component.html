@@ -1,0 +1,32 @@
+<br>
+<div *ngIf="detalletwitt" class="card">
+  <div class="card-body">
+    <!--   <div class="card-title">
+          <h1 class="display-4">Detalle</h1>
+        </div>
+    <div class="card-text">
+      <form #form >
+        <div class="form-group">
+          id:
+          <input class="form-control" name="id" type="number" [(ngModel)] = "detalletwitt.id" disabled>
+        </div>
+        <div class="form-group">
+          description:
+          <input type="text" name="description" #description ="ngModel" [class.is-valid] = "description.valid" [class.is-invalid] = "description.invalid" class="form-control" [(ngModel)] = "detalletwitt.body" required>
+         </div>
+         <button class="btn btn-success" type="submit" [disabled] ="!form.valid">Save</button>
+      </form>
+    </div> -->
+ <blockquote class="blockquote mb-0">
+<div class="card border-success mb-4" style="max-width: 50rem;">
+  <div class="card-header bg-transparent border-success">Nombre : {{detalletwitt.name}}</div>
+  <div class="card-body text-success">
+    <h5 class="card-title">Comentario :</h5>
+    <p class="card-text">{{detalletwitt.body}}</p>
+  </div>
+  <div class="card-footer bg-transparent border-success">Correo : {{detalletwitt.email}}</div>
+</div>
+<button type="button" class="btn btn-success" routerLink = '/post'>Regresar</button>
+</blockquote>
+</div>
+</div>
